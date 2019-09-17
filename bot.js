@@ -23,7 +23,7 @@ client.on('message', msg => {
 });
 
 client.on("guildCreate", guild => {
-  console.log("Бот добавлен на север: " + guild.name + "!");
+  console.log("Бот добавлен на сервер: " + guild.name + "!");
   client.user.setPresence({ status: 'online', game: { name: 'Let\'s crash | ' + client.guilds.size + " серверов" } });
 });
 
